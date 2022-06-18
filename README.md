@@ -59,7 +59,7 @@ Construir uma API para disponibilizar o acesso à previsão de vendas a partir d
 **False.** Lojas com COMPETIDORES MAIS PRÓXIMOS tem vendas acima das demais.
 
 **Hypothesis 03:** Lojas deveriam vender mais depois do dia 10 de cada mês.
-![](reports/figures/readme/h7.jpg)
+![](reports/figures/readme/h10.jpg)
 
 **True.** Lojas vendem MAIS depois do DIA 10 de cada mês.
 
