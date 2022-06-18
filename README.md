@@ -1,4 +1,4 @@
-# Rossmann Sales Prediction
+# [Rossmann Sales Prediction](https://t.me/dsr_rossmann_bot)
 ![](reports/figures/readme/header.jpg)
 ## Neste projeto utilizo conceitos da estatística e Machine Learning para construir uma ferramenta de previsão de vendas mais acurada.
 
