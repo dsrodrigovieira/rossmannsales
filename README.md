@@ -1,5 +1,5 @@
 # Rossmann Sales Prediction
-![](reports\figures\readme\header.jpg)
+![](reports/figures/readme/header.jpg)
 ## Neste projeto utilizo conceitos da estatística e Machine Learning para construir uma ferramenta de previsão de vendas mais acurada.
 
 #### This project was made by Rodrigo Vieira.
@@ -49,19 +49,19 @@ Construir uma API para disponibilizar o acesso à previsão de vendas a partir d
 # 4. Top 3 Data Insights
 
 **Hypothesis 01:** Lojas com maior sortimento deveriam vender mais.
-![](reports\figures\readme\h1.jpg)
+![](reports/figures/readme/h1.jpg)
 
-**True/False.** Lojas com MAIOR SORTIMENTO vendem MENOS.
+**False.** Lojas com MAIOR SORTIMENTO não tem vendas acima das demais.
 
 **Hypothesis 02:** Lojas com competidores mais próximos deveriam vender menos.
-![](reports\figures\readme\h2.jpg)
+![](reports/figures/readme/h2.jpg)
 
-**True/False.** Lojas com COMPETIDORES MAIS PRÓXIMOS vendem MAIS.
+**False.** Lojas com COMPETIDORES MAIS PRÓXIMOS tem vendas acima das demais.
 
-**Hypothesis 03:** Lojas abertas durante o feriado de Natal deveriam vender mais.
-![](reports\figures\readme\h7.jpg)
+**Hypothesis 03:** Lojas deveriam vender mais depois do dia 10 de cada mês.
+![](reports/figures/readme/h7.jpg)
 
-**True/False.** Lojas abertas durante o feriado do NATAL vendem MENOS.
+**True.** Lojas vendem MAIS depois do DIA 10 de cada mês.
 
 # 5. Machine Learning Model Applied
 | Model Name | Execution time | MAE | MAPE | RMSE |
@@ -72,7 +72,7 @@ Construir uma API para disponibilizar o acesso à previsão de vendas a partir d
 | XGBoost (tunned) | 2.6 s | 686.352512 | 0.100866 | 1000.999707 |
 
 # 6. Machine Learning Modelo Performance
-![](reports\figures\readme\performance.jpg)
+![](reports/figures/readme/performance.jpg)
 
 # 7. Business Results
 | Possível cenário | Vendas nas próximas 6 semanas |
@@ -82,9 +82,10 @@ Construir uma API para disponibilizar o acesso à previsão de vendas a partir d
 | Melhor cenário | 285.339.359,75 |
 
 # 8. Conclusions
-- A XGBoost se mostrou a melhor escolha para este projeto de previsão. Apesar de apresentar uma acurácia ligeiramente menor do que a Random Forest na fase de testes, a XGBoost performa melhor com menos recursos, garantindo que a solução não se torne muito cara para implementar e manter.
+- A XGBoost se mostrou a melhor escolha para este projeto de previsão. Apesar de apresentar uma acurácia ligeiramente menor do que a Random Forest na fase de testes, a XGBoost performa melhor com menos recursos.
 
 # 9. Lessons Learned
+- A principal lição neste projeto foi como decidir qual o melhor algoritmo de Machine Learning para atender à demanda do cliente. Neste caso, apesar de o algoritmo Random Forest apresentar melhores números nas métricas de performance, ele exige muitos recursos físicos para operar. Neste cenário, o retorno financeiro do modelo de previsão poderia ser anulado pelo alto investimento necessário para implementação. Apesar de ter números de performance ligeiramente abaixo do Random Forest, o XGBoost exige menos recursos entregando a redução de custos esperada sem comprometer a performance da estrutura que a empresa já possui.
 
 # 10. Next Steps to Improve
 - Criar um modelo de previsão de número de clientes por dia para utilizar essa variável no modelo de previsão de vendas, aumentando a acurácia do modelo.
